@@ -90,13 +90,15 @@ const Hero = () => {
                                     </div>
                                 </div>
                             ) : (
-                                <div className="w-full justify-center items-center flex flex-col">
-                                    <UplodingIcon />
-                                    <p className="pt-4 text-base font-normal leading-[150%]"> Paste or drag and drop files here</p>
-                                    <p className="pt-2 pb-4 text-base font-normal leading-[150%] opacity-40 custom-black">WAR, ZIP or EAR, file size no more than 10MB</p>
-                                    <label htmlFor="imageInp" className="size-8 bg-[#ED1C24] flex justify-center items-center rounded cursor-pointer border border-transparent hover:border-[#ED1C24] hover:bg-transparent duration-300 ease-linear plus-icon"><PlusIcon /></label>
+                                <>
+                                    <label htmlFor="imageInp" className="w-full justify-center border-green-600 border-2 items-center flex flex-col cursor-pointer">
+                                        <UplodingIcon />
+                                        <p className="pt-4 text-base font-normal leading-[150%]"> Paste or drag and drop files here</p>
+                                        <p className="pt-2 pb-4 text-base font-normal leading-[150%] opacity-40 custom-black">WAR, ZIP or EAR, file size no more than 10MB</p>
+                                        <div className="size-8 bg-[#ED1C24] flex justify-center items-center rounded cursor-pointer border border-transparent hover:border-[#ED1C24] hover:bg-transparent duration-300 ease-linear plus-icon group"><PlusIcon iconClass="group-hover:fill-red" /></div>
+                                    </label>
                                     <input type="file" id="imageInp" hidden onChange={imageUploadHandler} />
-                                </div>
+                                </>
                             )}
                         </div>
                     </div>
