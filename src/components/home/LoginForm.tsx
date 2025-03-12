@@ -7,13 +7,11 @@ const Login = () => {
     const router = useRouter();
     const initialFormData = {
         firstName: "",
-        secondName: "",
         email: "",
+        secondName: "",
     };
-
-    const [formData, setFormData] = useState(initialFormData);
     const [error, setError] = useState(false);
-
+    const [formData, setFormData] = useState(initialFormData);
     const EmailRegex =
         /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 

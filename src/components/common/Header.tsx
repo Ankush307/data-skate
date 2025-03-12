@@ -40,14 +40,12 @@ const Header = () => {
                 </div>
                 <div className="flex cursor-pointer items-center gap-[7px]">
                     <Image
-                        src={dashboardPage && profileImage ? profileImage : "/assets/images/png/user-img.png"}
-                        unoptimized width={40} height={40} alt="admin" className="rounded-full size-10 object-cover pointer-events-none" />
-                    {!homePage ? (
-                        <div className="flex flex-col max-sm:hidden gap-[1px]">
-                            <p className="font-syne font-medium leading-[100%]"> {user.firstName} {user.secondName}</p>
-                            <p className="text-sm text-black/70">Admin</p>
-                        </div>
-                    ) : (<p className="font-syne font-medium">Login</p>)}
+                        src={dashboardPage && profileImage ? "/assets/images/png/user-img.png" : ""}
+                        width={40} height={40} alt="admin" className="rounded-full size-10 object-cover pointer-events-none" />
+                    <div className="flex flex-col max-sm:hidden gap-[1px]">
+                        <p className="font-syne font-medium leading-[100%]"> {user.firstName} {user.secondName}</p>
+                        <p className="text-sm text-black/70">Admin</p>
+                    </div>
                     {!homePage && <DownArrow iconClass="max-sm:hidden" />}
                 </div>
             </div>
