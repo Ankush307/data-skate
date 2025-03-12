@@ -1,11 +1,9 @@
-import LoginForm from "@/components/LoginForm";
-import Footer from "@/components/common/Footer";
+import LoginForm from "@/components/home/LoginForm";
 
 export default function Home() {
   return (
     <>
       <LoginForm />
-      <Footer />
     </>
   );
 }

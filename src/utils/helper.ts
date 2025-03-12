@@ -1,11 +1,32 @@
-export const FEATURES_LIST = [
+export const UPLOAD_FILE_LIST: string[] = [
+    "Works on any device—without installation",
+    "Supports more than 10 filetypes",
+    "Start reading now—no registration needed",
+];
+
+export const DETAILED_METRICES_LIST = [
     {
-        title: "Works on any device—without installation"
+        number: 11,
+        title: "No of starter processes",
     },
     {
-        title: "Supports more than 10 filetypes"
+        number: 2,
+        title: "No of Connections",
     },
     {
-        title: "Start reading now—no registration needed"
-    }
-]
+        number: 11,
+        title: "No of process",
+    },
+    {
+        number: 27,
+        title: "No of Activities",
+    },
+    {
+        number: 5,
+        title: "No of Variables",
+    },
+    {
+        number: 2,
+        title: "No of Functions",
+    },
+];
